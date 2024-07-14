@@ -11,7 +11,7 @@
 }
 main{
     width:100vw;
-    height:100vh;
+    min-height:100vh;
     background-image: url(../img/j1407b-wallpapers2.png);
     background-size: cover;
     background-position: center;

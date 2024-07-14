@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Raleway", sans-serif;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+}
+main{
+    width:100vw;
+    height:100vh;
+    background-image: url(../img/j1407b-wallpapers2.png);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    padding: 0 15px;
+}
+.card{
+    max-width: 400px;
+    min-height: 400px;
+    background-color: rgba(0 0 0 / 0.5);
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    padding: 40px;
+    border: 1px solid oldlace;
+}
+.input_section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr .25fr;
+    background-color: #fff;
+    padding: 10px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+.input_section input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+.input_section button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 5px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgba(0 0 0 / 0.8);
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+.wrapper{
+    width: 100%;
+    height: auto;
+}
+.wrapper .list-group-item{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr .25fr .25fr;
+    padding: 10px;
+    background-color: rgba(0 0 0 / 0.4);
+    margin: 10px 0;
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    color: #fff;
+    align-items: center;
+    grid-gap: 10px;
+}
+.list-group-item .btn-danger{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: firebrick;
+    color: #fff;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.list-group-item .btn-primary{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: rgba(0 0 0 / 0.2);
+    color: #fff;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.card .trash{
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    background-color: firebrick;
+    color: #fff;
+    cursor: pointer;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+
+@media(max-width: 375px){
+    .wrapper .list-group-item{
+        padding: 8px;
+        margin: 8px 0;
+        grid-gap: 8px;
+        font-size: 15px;
+    }
+    .list-group-item .btn-danger{
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .list-group-item .btn-primary{
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .card .trash{
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 320px){
+    .input_section{
+        padding: 8px;
+    }
+    .input_section input{
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .input_section button{
+        font-size: 20px;
+    }
+    .wrapper .list-group-item{
+        font-size: 10px;
+    }
+    .list-group-item .btn-danger{
+        font-size: 10px;
+    }
+    .list-group-item .btn-primary{
+        font-size: 10px;
+    }
+}

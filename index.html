@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase Todo App</title>
+  <!-- remix icon link  -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- box icon link  -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Favicon link -->
+   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <!-- custom css link -->
+  <link rel="stylesheet" href="css/index.css">
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+</head>
+
+<body>
+  <main>
+    <div class="card">
+      <div class="input_section">
+        <input class="input_item" id="input_field" type="text" placeholder="Enter Items">
+
+      <button title="Add and Save" class="bx bxs-bookmark-plus btn" onclick="addTodo()"> </button>
+
+      </div>
+      
+      <div class="wrapper">
+        <ul id="list">
+
+        </ul>
+      </div>
+      <button title="Delete All Items" class="bx bxs-trash-alt btn trash" onclick="deleteAll()"> </button>
+    </div>
+
+  </main>
+
+  <!-- <i class='bx bxs-bookmark-plus'></i> -->
+  <script src="js/index.js"></script>
+</body>
+
+</html>
